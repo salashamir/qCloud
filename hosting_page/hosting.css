@@ -1,0 +1,115 @@
+.signup-page {
+  padding: 6.2rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.315)),
+    linear-gradient(#f56d9b, #e76b94);
+}
+
+.sign-up__header {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #4ce675;
+  margin-bottom: 0.8rem;
+  line-height: 1;
+}
+
+.tertiary-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #5dec84;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: grid;
+  row-gap: 1rem;
+  background-color: rgb(247, 241, 241);
+  border: 3px solid #24b24a;
+  margin-inline: auto;
+  width: 95%;
+  max-width: 600px;
+  border-radius: 0.4rem;
+  padding: 3rem;
+}
+
+.form label,
+.form input,
+.form select {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form input:not([type="checkbox"]),
+.form select {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  font-family: "Raleway", sans-serif;
+  color: #d42962;
+  background-color: #fffcfd;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  background-color: #eefff3;
+  border-color: #5dec84;
+}
+
+.form input[id="terms"],
+.form input[id="terms"] + label {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.form input[type="checkbox"] {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 1rem;
+  width: 1rem;
+  appearance: none;
+}
+
+.form input[type="checkbox"]:checked {
+  background: #5dec84;
+  border: 2px solid #24b24a;
+}
+
+.form button[type="submit"] {
+  display: block;
+  width: auto;
+  padding: 0.7rem 1.3rem;
+}
+
+.form input.invalid,
+.form select.invalid,
+.form :invalid {
+  border-color: rgb(194, 34, 34) !important;
+  background-color: rgb(247, 178, 178) !important;
+}
+
+@media (min-width: 40em) {
+  .form {
+    grid-template-columns: 10rem auto;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+  }
+
+  .form-checkbox {
+    grid-column: 1 / -1;
+  }
+
+  .form [for="title"] {
+    grid-column: span 2;
+  }
+
+  #title {
+    grid-column: span 2;
+  }
+}

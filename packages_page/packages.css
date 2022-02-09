@@ -1,0 +1,90 @@
+/* main {
+  background: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.26)),
+    url("../imgs/freedom.jpg") center / cover;
+} */
+
+.section-a {
+  padding: 6.4rem 0 3.2rem;
+  background: #ebf8ee;
+}
+
+.section-b {
+  padding: 3.2rem 0;
+  background: #fde7ee;
+}
+
+.section-b .plan-row__img {
+  order: 2;
+}
+
+.section-c {
+  padding: 3.2rem 0 6.4rem;
+  background: rgb(248, 248, 233);
+}
+
+.plan-row {
+  display: flex;
+  flex-direction: row;
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.plan-row__img {
+  /* width: 60%;
+  min-width: 538px;
+  max-width: 630px; */
+  width: clamp(538px, 60%, 630px);
+}
+
+.section-b .plan-row__img {
+  justify-content: flex-end;
+}
+
+.plan-row__img img {
+  /* width: min(621.9px, 90%); */
+  width: 100%;
+  border: 6px solid #eea7bd;
+}
+
+.plan-row__text {
+  width: 42%;
+}
+
+.plan-row__name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.plan-row__desc {
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #222;
+  line-height: 1.8;
+}
+
+@media (max-width: 978px) {
+  .plan-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .plan-row__img {
+    /* width: 60%;
+    min-width: 538px;
+    max-width: 630px; */
+    width: 80%;
+  }
+
+  .plan-row__text {
+    width: 80%;
+  }
+
+  .section-b .plan-row__text {
+    order: 2;
+  }
+}
